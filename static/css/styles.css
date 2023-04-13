@@ -1,0 +1,48 @@
+body {
+	background-color: #0a0a0a;
+	width: 80%;
+	margin-left: 10%;
+	height: 100%;
+	font-family: 'Arial';
+	z-index: 2;
+}
+div.background {
+    background-image: url("Gachi.jpg");
+    background-size: 100% 100%;
+    filter: sepia(50%);
+    height: 100vh;
+    z-index: -2;
+}
+h1 {
+    text-align: center;
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 20s ease infinite;
+    animation: rainbow 20s ease infinite;
+    font-size: 40px;
+    line-height: 60px;
+    filter: drop-shadow(16px 16px 10px black);
+}
+.rainbow-animated {
+    background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: rainbow 1s ease infinite;
+    animation: rainbow 1s ease infinite;
+    font-size: 25px;
+    line-height: 25px;
+}
+@-webkit-keyframes rainbow {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+@keyframes rainbow {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
