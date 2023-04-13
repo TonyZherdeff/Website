@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+<body>
+    {% block body %}
+    <div class="background1">
+        <h1>{{ the_title }}</h1>
+        <form method='POST' action='/even_results'>
+            <table class="link-block1">
+                <tr>
+                    <td>Start: </td>
+                    <td><input name='start' type='text' width='60'></td>
+                </tr>
+                <tr>
+                    <td>End: </td>
+                    <td><input name='end' type='text' width='60'></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id='even_text' value="Got it!" type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    {% endblock %}
+</body>

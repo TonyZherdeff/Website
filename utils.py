@@ -1,39 +1,44 @@
-import string
-import json
-import random
+def odd_list_create(num_start, num_end) -> str:
+    odd_list = []
+    i = num_start
+    while i <= num_end:
+        if i % 2:
+            odd_list.append(str(i))
+        i += 1
+    return " ".join(odd_list)
 
 
-def count_punkt(text: str) -> str:
-    cnt = 0
-    for i in text:
-        if i in string.punctuation:
-            cnt += 1
-    return str(cnt)
+def even_list_create(num_start, num_end) -> str:
+    even_list = []
+    i = num_start
+    while i <= num_end:
+        if not i % 2:
+            even_list.append(str(i))
+        i += 1
+    return " ".join(even_list)
 
 
-def data_get_json() -> str:
-    num = random.randint(0, 100)
-    data_dict = {'0d num': num,
-                 '0x num': hex(num),
-                 '0b num': bin(num)}
-    return json.dumps(data_dict)
+def simple_list_create(num_start, num_end) -> str:
+    simple_list = []
+    i = num_start
+    while i <= num_end:
+        if is_prime(i):
+            simple_list.append(str(i))
+        i += 1
+    return " ".join(simple_list)
 
 
-def num_verify(text: str):
-    if len(text) != 6:
-        return f'шестизначным числом'
-    else:
-        i = 0
-        j = 3
-        part1 = 0
-        part2 = 0
-        while i <= 2:
-            part1 = part1 + int(text[i])
-            i += 1
-        while j <= len(text) - 1:
-            part2 = part2 + int(text[j])
-            j += 1
-        if part1 == part2:
-            return True
-        else:
+def square_list_create(num_start, num_end) -> str:
+    square_list = []
+    i = num_start
+    while i <= num_end:
+        square_list.append(str(i*i))
+        i += 1
+    return " ".join(square_list)
+
+
+def is_prime(x):
+    for i in range(2, (x//2)+1):
+        if x % i == 0:
             return False
+    return True

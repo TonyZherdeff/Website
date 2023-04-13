@@ -6,14 +6,14 @@ body {
 	font-family: 'Arial';
 	z-index: 2;
 }
-div.background {
+div.background1 {
     background-image: url("Gachi.jpg");
     background-size: 100% 100%;
     filter: sepia(50%);
     height: 100vh;
     z-index: -2;
 }
-h1 {
+h2 {
     padding-top: 10%;
     text-align: center;
     background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
@@ -47,97 +47,28 @@ h1 {
     50% { background-position: 100% 50% }
     100% { background-position: 0% 50% }
 }
-div.link-block {
+table.link-block1 {
     background-color: #0c0c0c;
     margin-top: 15%;
-    width: 96%;
-	margin-left: 2%;
+    width: 40%;
+	margin-left: 30%;
     height: 40%;
     display: flex;
 }
-.forms {
-    width: 25%;
-    height: 100%;
+td {
+    color: white;
 }
-div.option_1 {
-    width: 100%;
-    height: 100%;
+div.link-block1 {
+    background-color: #0c0c0c;
+    margin-top: 15%;
+    width: 40%;
+	margin-left: 30%;
+    height: 40%;
+    display: flex;
 }
-div.option_1:hover {
-    filter: brightness(1.5);
-    background-color: red;
-}
-#odd_img {
+#result {
+    color: white;
     margin: 5% 5% 5% 5%;
-    width: 90%;
-    height: 75%;
-}
-#odd_text {
-    margin: 0% 5% 5% 5%;
-    width: 90%;
-    height: 11%;
-    background-color: #ddd;
-}
-div.option_2 {
-    width: 100%;
-    height: 100%;
-}
-div.option_2:hover {
-    filter: brightness(1.5);
-    background-color: red;
-}
-#even_img {
-    margin: 5% 5% 5% 5%;
-    width: 90%;
-    height: 75%;
-}
-#even_text {
-    margin: 0% 5% 5% 5%;
-    width: 90%;
-    height: 11%;
-    background-color: #ddd;
-}
-div.option_3 {
-    width: 100%;
-    height: 100%;
-}
-div.option_3:hover {
-    filter: brightness(1.5);
-    background-color: red;
-}
-#o3_img {
-    margin: 5% 5% 5% 5%;
-    width: 90%;
-    height: 75%;
-}
-#o3_text {
-    margin: 0% 5% 5% 5%;
-    width: 90%;
-    height: 11%;
-    background-color: #ddd;
-}
-div.option_4 {
-    width: 100%;
-    height: 100%;
-}
-div.option_4:hover {
-    filter: brightness(1.5);
-    background-color: red;
-}
-#o4_img {
-    margin: 5% 5% 5% 5%;
-    width: 90%;
-    height: 75%;
-}
-#o4_text {
-    margin: 0% 5% 5% 5%;
-    width: 90%;
-    height: 11%;
-    background-color: #ddd;
-}
-#go_back {
-    margin-left: 45%;
-    width: 10%;
-    height: 10%;
-    background-color: #ddd;
+    font-size: 20px;
+    line-height: 20px;
 }

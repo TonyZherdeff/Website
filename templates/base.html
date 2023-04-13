@@ -3,13 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet"/>
+    <link type="text/css" href="{{ url_for('static', filename='css/entry.css')}}" rel="stylesheet"/>
     <title>{{ the_title }}</title>
 </head>
 <body>
     {% block body %}
     <div class="background">
         <h1>{{ the_header }}</h1>
-
+        <div class="link-block">
+            <form class="forms" method='POST' action='/odd'>
+                <div class="option_1">
+                    <img id="odd_img" src="static/css/Gachi1.jpeg">
+                    <input value="Get all of odd numbers in range" type="submit" id="odd_text">
+                </div>
+            </form>
+            <form class="forms" method='POST' action='/even'>
+                <div class="option_2">
+                    <img id="even_img" src="static/css/Gachi2.jpg">
+                    <input value="Get all of even numbers in range" type="submit" id="even_text">
+                </div>
+            </form>
+            <form class="forms" method='POST' action='/simple'>
+                <div class="option_3">
+                    <img id="o3_img" src="static/css/Gachi3.jpg">
+                    <input value="Get all of prime numbers in range" type="submit" id="o3_text">
+                </div>
+            </form>
+            <form class="forms" method='POST' action='/square'>
+                <div class="option_4">
+                    <img id="o4_img" src="static/css/Gachi4.jpg">
+                    <input value="Get all second roots of numbers in range" type="submit" id="o4_text">
+                </div>
+            </form>
+        </div>
     </div>
     {% endblock %}
 </body>
